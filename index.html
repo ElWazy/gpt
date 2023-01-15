@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Cachupín - Guardería de perros</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Cachupín</h1>
+    <h2>Guardería de perros de alta calidad</h2>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#horarios">Horarios</a></li>
+      <li><a href="#tarifas">Tarifas</a></li>
+      <li><a href="#ubicacion">Ubicación</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="servicios">
+      <h3>Servicios</h3>
+      <div class="services">
+        <div class="service">
+          <img
+            src="https://images.unsplash.com/photo-1444201983204-c43cbd584d93?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+            alt="image">
+          <div class="service-text">
+            <h4>Alojamiento</h4>
+            <p>Ofrecemos alojamiento seguro y cómodo para su perro, con áreas de juego y descanso.</p>
+          </div>
+        </div>
+        <div class="service">
+          <div class="service-text">
+            <h4>Caminatas diarias</h4>
+            <p>Aseguramos que su perro reciba una caminata diaria para mantenerse activo y saludable.</p>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1530700131180-d43d9b8cc41f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1434&q=80"
+            alt="image">
+        </div>
+        <div class="service">
+          <img
+            src="https://images.unsplash.com/photo-1632236568025-1256513514b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+            alt="image">
+          <div class="service-text">
+            <h4>Alimentación</h4>
+            <p>Ofrecemos opciones de alimentación personalizadas para su perro, incluyendo alimentación premium.</p>
+          </div>
+        </div>
+        <div class="service">
+          <div class="service-text">
+            <h4>Baño y peinado</h4>
+            <p>Ofrecemos servicios de baño y peinado para mantener a su perro limpio y presentable.</p>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
+            alt="image">
+        </div>
+        <div class="service">
+          <img
+            src="https://images.unsplash.com/photo-1546815708-410983510897?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+            alt="image">
+          <div class="service-text">
+            <h4>Entrenamiento</h4>
+            <p>Ofrecemos entrenamiento personalizado para ayudar a su perro a desarrollar buenos</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="horarios-abierto">
+      <h3>Horarios de Apertura</h3>
+      <div class="open-hours">
+        <div class="day">
+          <span>Lunes</span>
+          <span>7:00 am - 7:00 pm</span>
+        </div>
+        <div class="day">
+          <span>Martes</span>
+          <span>7:00 am - 7:00 pm</span>
+        </div>
+        <div class="day">
+          <span>Miércoles</span>
+          <span>7:00 am - 7:00 pm</span>
+        </div>
+        <div class="day">
+          <span>Jueves</span>
+          <span>7:00 am - 7:00 pm</span>
+        </div>
+        <div class="day">
+          <span>Viernes</span>
+          <span>7:00 am - 7:00 pm</span>
+        </div>
+        <div class="day">
+          <span>Sábado</span>
+          <span>9:00 am - 5:00 pm</span>
+        </div>
+        <div class="day">
+          <span>Domingo</span>
+          <span>9:00 am - 5:00 pm</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="tarifas">
+      <h3>Tarifas</h3>
+      <div class="pricing-container">
+        <div class="pricing-card">
+          <h4>Plan Básico</h4>
+          <div class="price">$25/día</div>
+          <ul>
+            <li>Alojamiento</li>
+            <li>Caminatas diarias</li>
+            <li>Alimentación básica</li>
+          </ul>
+          <button>Reservar</button>
+        </div>
+        <div class="pricing-card">
+          <h4>Plan Premium</h4>
+          <div class="price">$35/día</div>
+          <ul>
+            <li>Alojamiento</li>
+            <li>Caminatas diarias</li>
+            <li>Alimentación premium</li>
+            <li>Baño y peinado</li>
+            <li>Jugando y entrenando</li>
+          </ul>
+          <button>Reservar</button>
+        </div>
+        <div class="pricing-card">
+          <h4>Plan VIP</h4>
+          <div class="price">$50/día</div>
+          <ul>
+            <li>Alojamiento de lujo</li>
+            <li>Caminatas diarias personalizadas</li>
+            <li>Alimentación gourmet</li>
+            <li>Baño y peinado premium</li>
+            <li>Entrenamiento personalizado</li>
+            <li>Sesiones de juego privadas</li>
+          </ul>
+          <button>Reservar</button>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="ubicacion">
+      <h3>Ubicación</h3>
+      <div id="map" style="width: 100%; height: 400px;"></div>
+    </section>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+      const latitud = -33.4526775;
+      const longitud = -70.6502278;
+
+      const map = L.map('map').setView([latitud, longitud], 13);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+
+      L.marker([latitud, longitud]).addTo(map)
+        .bindPopup('Guardería de perros Fido Feliz.')
+        .openPopup();
+    </script>
+
+
+    <section id="contacto">
+      <h3>Contacto</h3>
+      <form>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Teléfono:</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+
+  </main>
+  <footer>
+    <p>Copyright © 2023 Cachupín</p>
+  </footer>
+</body>
+
+</html>
